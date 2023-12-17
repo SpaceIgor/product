@@ -1,7 +1,7 @@
 How to run a project on your local machine?
 1.Install Docker https://docs.docker.com/engine/install/
 2.Run docker-compose up --build pgadmin
-3.Open http://localhost:5050/browser/ with password: shop_dev and create DB shop_dev (user: shop_dev, password: pass, )
+3.Open http://localhost:5050/browser/ with password: shop_dev and create DB shop_dev (user: shop_dev, password: pass, ) - all credential in docker-compose
 4.Run docker-compose up --build - If you have error /data/db: permission denied failed to solve run: sudo chmod -R 777 ./data/db
 5.Run migrations by docker exec -it shop_dev python3 manage.py migrate (makemigrations -> migrate if u
 change or add models)
